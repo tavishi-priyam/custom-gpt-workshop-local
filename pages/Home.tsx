@@ -10,7 +10,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
   const cards = [
     {
       id: 'copywriter',
-      title: 'Personal Writing Assistant',
+      title: 'Personal Copywriter',
       tag: 'Writing',
       desc: 'Create an AI that writes exactly like you. Perfect for emails, blogs, and social posts.',
       icon: '✍️',
@@ -18,7 +18,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
     },
     {
       id: 'reporter',
-      title: 'Expert News Reporter',
+      title: 'Reporter',
       tag: 'Strategy',
       desc: 'Get help drafting pitches and testing your ideas against a "tough" reporter persona.',
       icon: '🎙️',
@@ -26,9 +26,9 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
     },
     {
       id: 'client',
-      title: 'Friendly Brand Guide',
+      title: 'Client',
       tag: 'Support',
-      desc: 'An AI that knows your brand inside out to help with customer questions and approvals.',
+      desc: 'An AI that knows your client inside out to help with message testing, drafting content, etc.',
       icon: '🤝',
       accent: 'bg-emerald-500'
     },
@@ -50,7 +50,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             </span>
           </h1>
           <p className="max-w-2xl mx-auto text-lg text-slate-400 mb-12 leading-relaxed text-balance">
-            A "Custom GPT" is just a version of ChatGPT that's been given special instructions by you. 
+            A "Custom GPT" is a version of ChatGPT that's been given special instructions by you. 
             No coding required. Just copy, paste, and create.
           </p>
           <div className="flex flex-wrap justify-center gap-6">

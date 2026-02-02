@@ -8,9 +8,15 @@ interface WorkshopPageProps {
   showToast: (msg: string) => void;
 }
 
+const sampleKnowledgePdfByType: Record<string, string> = {
+  copywriter: "/sample-copywriter-knowledge.pdf",
+  reporter: "/sample-reporter-knowledge.pdf",
+  client: "/sample-client-knowledge.pdf",
+};
+
 const PAGE_DATA: Record<string, WorkshopPageData> = {
   copywriter: {
-    title: "Personal Writing Assistant",
+    title: "Personal Copywriter",
     subtitle: "Make ChatGPT write just like you.",
     description: "This assistant is designed to learn your personal style. It will stop using robotic words and start writing in a voice that feels human and helpful.",
     steps: [
@@ -50,7 +56,7 @@ How you should write:
     ]
   },
   reporter: {
-    title: "Expert News Reporter",
+    title: "Reporter",
     subtitle: "Test your ideas with a pro.",
     description: "This assistant acts like a tough but fair news reporter. It's great for practicing interviews or making sure your project announcements make sense.",
     steps: [
@@ -86,7 +92,7 @@ When I tell you about a project:
     ]
   },
   client: {
-    title: "Friendly Brand Guide",
+    title: "Client",
     subtitle: "Keep your brand voice consistent.",
     description: "Create an assistant that knows your company's rules and frequently asked questions. It's like having a project manager who never forgets a detail.",
     steps: [
@@ -126,6 +132,7 @@ Our Rules:
 };
 
 export const WorkshopPage: React.FC<WorkshopPageProps> = ({ type, showToast }) => {
+  const samplePdfHref = sampleKnowledgePdfByType[type];
   const data = PAGE_DATA[type];
   const [copiedCount, setCopiedCount] = useState(0);
   const totalBlocks = data.blocks.length;
@@ -167,6 +174,32 @@ export const WorkshopPage: React.FC<WorkshopPageProps> = ({ type, showToast }) =
           </div>
         </div>
       </section>
+      <div className="mt-8 flex justify-center">
+        <a
+          href={samplePdfHref}
+          download
+          target="_blank"
+          rel="noreferrer"
+          className="
+            inline-flex items-center gap-3
+            rounded-full
+            border border-white/15
+            bg-white/10
+            px-6 py-3
+            text-sm font-semibold text-white
+            backdrop-blur-md
+            transition-all
+            hover:bg-white/20
+            hover:scale-[1.03]
+            active:scale-[0.98]
+          "
+        >
+          Download Sample Knowledge Base
+          <span className="rounded-full bg-white/15 px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider">
+            PDF
+          </span>
+        </a>
+      </div>
 
       <div className="max-w-4xl mx-auto px-6 pt-16">
         {/* Simple Setup Checklist */}
