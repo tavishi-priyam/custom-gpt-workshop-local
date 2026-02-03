@@ -110,7 +110,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           <h2 className="text-3xl font-bold mb-10 text-center">How to use this site</h2>
           <div className="space-y-8">
             {[
-              { step: '1', title: 'Pick an Assistant', desc: 'Choose between the Writer, the Reporter, or the Brand Guide.' },
+              { step: '1', title: 'Pick an Assistant', desc: 'Choose between the Copywriter, the Reporter, or the Client.' },
               { step: '2', title: 'Open ChatGPT', desc: 'Go to ChatGPT and click "Explore GPTs" then "Create".' },
               { step: '3', title: 'Copy & Paste', desc: 'Use the "Copy" buttons on this site to grab the instructions and paste them into ChatGPT.' },
               { step: '4', title: 'Test it out', desc: 'Start a chat with your new assistant and see how it works!' },
