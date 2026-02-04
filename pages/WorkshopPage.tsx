@@ -27,6 +27,32 @@ const PAGE_DATA: Record<string, WorkshopPageData> = {
     ],
     blocks: [
       {
+        title: "Research",
+        description: "Use this prompt to conduct research using ChatGPT to build your knowledge base.",
+        content: `Research the role and writing approach of a Senior Account Executive working in healthcare public relations at a global communications agency. Using publicly available sources such as agency blogs, thought leadership articles, healthcare PR case studies, industry panels, interviews, and best-practice guides, analyze how experienced healthcare PR copywriters approach their work.
+
+Your research should synthesize:
+- Writing voice and tone used in healthcare communications
+- How complex scientific or medical information is translated for different audiences
+- Common stylistic patterns (sentence length, structure, framing)
+- How empathy, clarity, and credibility are balanced
+- How copywriters adapt messaging for patients, HCPs, policymakers, media, and internal stakeholders
+- Typical constraints copywriters operate under (compliance, accuracy, client sensitivity)
+
+Identify:
+- Core principles that guide strong healthcare PR writing
+- Common mistakes or language to avoid
+- Do’s and don’ts for tone, word choice, and framing
+- How copywriters collaborate with clients and internal teams
+
+Then, synthesize your findings into a practical knowledge base that includes:
+- A clear description of the copywriter’s role and priorities
+- Writing philosophy (voice, tone, style)
+- Core messaging principles
+- Explicit do’s and don’ts
+- Usage guidelines for someone trying to write as this copywriter`
+      },
+      {
         title: "Instructions (The 'Brain')",
         description: "Copy this into the 'Instructions' box to tell the AI how to behave.",
         content: `You are my Personal Copywriter, modeled after a Senior Account Executive at Ruder Finn in the healthcare practice. Your job is to help me write and edit content that is clear, credible, and strategic—while translating complex healthcare, science, or policy topics into language that is accurate, human, and easy to understand.
@@ -65,6 +91,18 @@ Always keep in mind:
 - Use bullets and subheads whenever possible to make it easy to read.
 - Avoid buzzwords, jargon, and vague corporate language.
 - If something could be sensitive, flag it and suggest a safer alternative.`
+      },
+      {
+        title:"Testing",
+        description:"Use these prompts to test your personal copywriter",
+        content:`Press Release Draft
+- Using the information below, draft a clear, professional press release suitable for a healthcare audience.
+
+Tone & Clarity Edit
+- Edit the following draft to sound more credible, human, and strategic.
+
+Audience Adaptation
+- Rewrite the following message for a different audience. First, write it for a general public audience. Then adapt it for a healthcare professional audience.`
       }
     ]
   },
@@ -79,6 +117,55 @@ Always keep in mind:
       "Follow the blocks below to fill out your new assistant."
     ],
     blocks: [
+      {
+        title: "Research",
+        description: "Use this prompt to conduct research using ChatGPT to build your knowledge base.",
+        content: `Research the work and approach of a senior technology reporter at a top-tier national publication who covers artificial intelligence, technology companies, regulation, and the societal impact of technology. Base your analysis on publicly available sources such as reported articles, interviews, panel discussions, podcasts, Q&As, and journalism guidelines.
+Analyze and synthesize:
+- Writing tone and voice
+- How stories are framed and structured
+- Common themes and beats covered
+- Types of questions the reporter consistently asks
+- What the reporter is skeptical of (corporate claims, hype, timelines, motives, data gaps)
+- How facts, claims, and analysis are clearly separated
+- How uncertainty and incomplete information are handled
+
+Identify:
+- What makes a topic “newsworthy” from this reporter’s perspective
+- How sources are treated and attributed
+- Language patterns and verbs commonly used
+- What the reporter avoids (opinion, advocacy, exaggeration)
+        
+Then synthesize your findings into a reporter knowledge base that includes:
+- A clear description of the reporter’s role and mindset
+- Voice, tone, and stylistic rules
+- Core journalistic principles
+- Do’s and don’ts for writing like this reporter
+- Guidance on how this reporter would evaluate pitches, announcements, and narratives`
+      },
+      {
+        title: "Instructions (The 'Brain')",
+        description: "Copy this into the 'Instructions' box to tell the AI how to behave.",
+        content: `You are my Personal Copywriter, modeled after a Senior Account Executive at Ruder Finn in the healthcare practice. Your job is to help me write and edit content that is clear, credible, and strategic—while translating complex healthcare, science, or policy topics into language that is accurate, human, and easy to understand.
+
+How you should write:
+- Be clear and friendly. No corporate jargon.
+- Use short sentences and simple words.
+- Don't use "robotic" words like: unleash, elevate, or tap into.
+- Prioritize accuracy and clarity over cleverness.
+- Use plain language and explain complex ideas without oversimplifying.
+- Avoid hype, exaggeration, or promotional language.
+- Be warm and human, but appropriate for healthcare and regulated audiences.
+- Default to active voice and short-to-medium length sentences.
+- If context is missing, ask clarifying questions before drafting.
+- Always ask me: "Who are we writing this for?" if you aren't sure.
+
+Always keep in mind:
+- Who the audience is
+- The sensitivity of healthcare topics
+- Brand, regulatory, and reputational considerations
+`
+      },
       {
         title: "Instructions (The 'Brain')",
         description: "Copy this into the 'Instructions' box to tell the AI how to behave.",
@@ -117,6 +204,20 @@ You write as a journalist—not a marketer, advocate, or spokesperson. Your prio
 - Prefer neutral verbs (“said,” “reported,” “confirmed,” “showed”).
 - If information is incomplete, explicitly state what is unknown.
 - Keep paragraphs concise and focused on a single idea.`
+      },
+      {
+        title:"Testing",
+        description:"Use these prompts to test your personal copywriter",
+        content:`Pitch Review
+- Review the following pitch as a senior technology reporter at a top-tier national publication.
+- What questions would you ask before considering coverage?
+- What feels unclear, overstated, or insufficiently supported?
+
+Newsworthiness Test
+
+- Evaluate the following announcement from a reporter’s perspective. What is genuinely new here?
+- What context or background would a reader need?
+- What information is missing that would affect coverage?`
       }
     ]
   },
@@ -131,6 +232,30 @@ You write as a journalist—not a marketer, advocate, or spokesperson. Your prio
       "Follow the blocks below to fill out your new assistant."
     ],
     blocks: [
+      {
+        title: "Research",
+        description: "Use this prompt to conduct research using ChatGPT to build your knowledge base.",
+        content: `Research how senior communications leaders at large pharmaceutical companies approach external and internal communications, messaging approval, and risk management. Use publicly available sources such as executive interviews, industry panels, regulatory guidance, crisis communications examples, corporate statements, and healthcare communications best-practice resources.
+Analyze and synthesize: 
+- The priorities of pharma communications leaders
+- How they evaluate messaging for accuracy, risk, and compliance
+- Common regulatory, legal, and reputational concerns
+- How sensitive topics (patient safety, clinical data, innovation, AI, pricing, regulation) are handled
+- The language patterns used in approved statements
+- How leaders balance transparency with caution
+
+Identify:
+- Red-flag language or claims that raise concern
+- Preferred phrasing and qualifiers
+- What triggers requests for revision, delay, or legal review
+- How communications leaders respond to agency recommendations
+
+Then synthesize your findings into a client knowledge base that includes:
+- The decision-making mindset of a pharma Head of Communications
+- Core messaging principles and approval criteria
+- Do’s and don’ts for external communications
+- Guidance on how this client would respond to drafts, pitches, and proposed language`
+      },
       {
         title: "Instructions (The 'Brain')",
         description: "Copy this into the 'Instructions' box to tell the AI how to behave.",
@@ -162,6 +287,17 @@ When appropriate, suggest safer alternative phrasing rather than rejecting conte
 - Assume all communications may be scrutinized by regulators, media, or investors.
 - If something feels risky, explain why and suggest a safer alternative.
 - When in doubt, recommend further review or clarification.`
+      },
+      {
+        title:"Testing",
+        description:"Use these prompts to test your personal copywriter",
+        content:`Campaign Review
+- Review the following campaign idea. Would you approve this as written?
+- What are the red flags and green flags?
+
+Risk Assessment
+- Evaluate the following messaging for potential regulatory, legal, or reputational risk.
+- Where would you recommend revisions or further review?`
       }
     ]
   }
