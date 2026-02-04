@@ -401,7 +401,7 @@ export const WorkshopPage: React.FC<WorkshopPageProps> = ({ type, showToast }) =
 
         <div className="mt-32 pt-12 border-t border-slate-900 text-center">
           <p className="text-slate-500 text-sm italic">
-            "The best way to learn AI is to start using it."
+            "Have a fun time building!" - Tavishi
           </p>
         </div>
       </div>
