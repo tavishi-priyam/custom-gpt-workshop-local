@@ -322,9 +322,9 @@ export const WorkshopPage: React.FC<WorkshopPageProps> = ({ type, showToast }) =
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-[10px] font-black uppercase tracking-widest text-purple-400 mb-6">
+              {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-[10px] font-black uppercase tracking-widest text-purple-400 mb-6">
                 Step {type === 'copywriter' ? '1' : type === 'reporter' ? '2' : '3'}
-              </div>
+              </div> */}
               <h1 className="text-4xl md:text-6xl font-black tracking-tighter mb-4">{data.title}</h1>
               <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
                 {data.description}
