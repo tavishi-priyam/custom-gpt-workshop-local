@@ -25,8 +25,9 @@ export const Layout: React.FC<LayoutProps> = ({ children, activePage, onNavigate
               className="flex items-center gap-3 cursor-pointer group" 
               onClick={() => onNavigate('home')}
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center neon-glow transform transition-transform group-hover:scale-105 group-hover:rotate-3">
-                <span className="text-white font-black text-xl">RF</span>
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center neon-glow transform transition-transform group-hover:scale-105 group-hover:rotate-3">
+                {/* <span className="text-white font-black text-xl">RF</span> */}
+                <div><img src="/rflogo.png"/></div>
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg tracking-tight leading-none">Custom GPT Workshop</span>
